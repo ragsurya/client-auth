@@ -15,8 +15,8 @@ class Login extends Component {
   render() {
     return (
       <div>
-      <FlatButton {...this.props} label="Login" />
-      <FlatButton {...this.props} label="Sign up" />
+      <FlatButton {...this.props} href="/signin"  label="Login" />
+      <FlatButton {...this.props}  href="/signup" label="Sign up" />
       </div>
     );
   }
@@ -25,21 +25,10 @@ class Login extends Component {
 const Logged = (props) => (
  
   <div>
-  {/* <IconMenu
-  //   {...props}
-  //   iconButtonElement={
-  //     <IconButton><MoreVertIcon /></IconButton>
-  //   }
-  //   targetOrigin={{horizontal: 'right', vertical: 'top'}}
-  //   anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-  // >
-  //   <MenuItem primaryText="Refresh" />
-  //   <MenuItem primaryText="Help" />
-  //   <MenuItem primaryText="Sign out" />
-  // </IconMenu>*/}
-  <FlatButton label="About us" />
-  <FlatButton label="Contact us" />
-  <FlatButton  label="Sign out" />
+  
+  <FlatButton href="/aboutus" label="About us" />
+  <FlatButton href="/contact" label="Contact us" />
+  <FlatButton href="/signout" label="Sign out" />
   </div>
 );
 

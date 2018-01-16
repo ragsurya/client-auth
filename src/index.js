@@ -8,6 +8,8 @@ import reduxThunk  from 'redux-thunk';
 import App from './components/app';
 import reducers from './reducers';
 import Signin from './components/auth/signin';
+import Signout from './components/auth/signout';
+import Signup from './components/auth/signup';
 import { reduxForm } from 'redux-form';
 
 import { AUTH_USER, AUTH_ERROR } from './actions/types';
@@ -29,6 +31,8 @@ ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
         <Route path="/signin" component={Signin} />
+        <Route path="/signout" component={Signout} />
+        <Route path="/signup" component={Signup} />
     </Route> 
   </Router> 
 
