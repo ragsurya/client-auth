@@ -42,13 +42,13 @@ class Header extends Component {
   renderLinks(){
     if(this.props.authenticated){
       return <AppBar
-          title="Adidda club"
+          title="Login form - Application"
         iconElementRight={<Logged />}
       />
     }
     else{
       return <AppBar
-      title="Adidda club"
+      title="Login form - Application"
     iconElementRight={<Login />}
   />
     }
